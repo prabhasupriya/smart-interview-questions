@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int number;
+    cin >> number;
+    int digit;
+    int temp =number ;
+    int cude =0;
+    while(temp >0){
+        digit = temp %10;
+        cude = cude + pow(digit , 3);
+        temp /= 10;
+    }
+    if(cude == number){
+        cout<<"Yes";
+    }
+    else{
+    cout << "No" << endl;
+    }
+    return 0;
+}
