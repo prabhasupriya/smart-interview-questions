@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int a,b,c;
+    cin >>a>> b >> c;
+    double d = b*b -(4*a*c);
+    if(d > 0){
+    double r = (-b + sqrt(d))/(2.0*a);
+    double k = (-b - sqrt(d))/(2.0*a); 
+    cout<< fixed <<setprecision(2)<<r <<" " << k;
+    }
+    else if (d ==0){
+        double l = -b /(2.0*a);
+        cout <<fixed <<setprecision(2) << l<< " " << l;
+    }
+    else{
+        cout << "Imaginary Roots";
+    }
+    return 0;
+}
